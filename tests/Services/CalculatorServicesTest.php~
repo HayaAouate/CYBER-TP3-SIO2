@@ -8,9 +8,10 @@ use PHPUnit\Framework\TestCase;
 class CalculatorServicesTest extends TestCase
 {
 
-    public function testAdd():void
+    public function testAdd()
     {
         $calcul= new CalculatorServices();
+        $calcul= $calcul->add(1,2);
         $this->assertEquals(3, $calcul->add(1,2));
 
     }
